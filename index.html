@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<head>
+    <title>Audit Activity</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="content">
+            <header>
+                <div class="header-content">
+                    <h1 class="title">Audit Activity</h1>
+                    <p class="subtitle">Recent security and configuration events</p>
+                </div>
+
+                <div class="header-buttons">
+                        <button>Refresh</button>
+                        <button>Export</button>
+                </div>
+            </header>
+        <div class="summary-metrics">
+            <div class="card">
+                <p class="summary-name">Total Events</p>
+                <p class="summary-value">312</p>
+            </div>
+            <div class="card">
+                <p class="summary-name">High Risk</p>
+                <p class="summary-value">312</p>
+
+            </div>
+            <div class="card">
+                <p class="summary-name">Failed</p>
+                <p class="summary-value">312</p>
+
+            </div>
+            <div class="card">
+                <p class="summary-name">Actors</p>
+                <p class="summary-value">312</p>
+
+            </div>
+        </div>
+        <div class="audit-cards">
+            <div class="audit-event-card">
+                <div class="event-details">
+                    <div class="event-description">
+                        <p class="event-title">Login failed (invalid credentials)</p>
+                        <p class="event-timestamp">2025-12-19 10:42</p>
+                    </div>
+                    <div class="event-badges">
+                        <button class="severity-badge red-badge">
+                            <p><i class="fa-solid fa-circle"></i>HIGH</p>
+                        </button>
+                        <button class="outcome-badge red-badge">
+                            <p><i class="fa-solid fa-circle"></i>FAIL</p>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="metadata">
+                    <div class="details">
+                        <p>Actor: <span>Aiden Brooks</span></p>
+                        <p>Entity: <span>User</span></p>
+
+                    </div>
+                    <div class="entity-details">
+                        <p>IP: <span>10.10.4.22</span></p>
+                        <p>ID: <span>USR-1042-LONG-ID-EXAMPLE-TO-TEST-ELLIPSIS</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="audit-event-card">
+                <div class="event-details">
+                    <div class="event-description">
+                        <p class="event-title">Role updated (permissions changed)</p>
+                        <p class="event-timestamp">2025-12-19 09:11</p>
+                    </div>
+                    <div class="event-badges">
+                        <button class="severity-badge yellow-badge">
+                            <p><i class="fa-solid fa-circle"></i>MED</p>
+                        </button>
+                        <button class="outcome-badge green-badge">
+                            <p><i class="fa-solid fa-circle"></i>SUCCESS</p>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="metadata">
+                    <div class="details">
+                        <p>Actor: <span> Maya Patel</span></p>
+                        <p>Entity: <span>Role</span></p>
+
+                    </div>
+                    <div class="entity-details">
+                        <p>IP: <span>10.10.1.18</span></p>
+                        <p>ID:  <span>ROL-220</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="audit-event-card">
+                <div class="event-details">
+                    <div class="event-description">
+                        <p class="event-title">Risk threshold changed for transaction scoring engine</p>
+                        <p class="event-timestamp">2025-12-18 18:27</p>
+                    </div>
+                    <div class="event-badges">
+                        <button class="severity-badge red-badge">
+                            <p><i class="fa-solid fa-circle"></i>HIGH</p>
+                        </button>
+                        <button class="outcome-badge green-badge">
+                            <p><i class="fa-solid fa-circle"></i>SUCCESS</p>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="metadata">
+                    <div class="details">
+                        <p>Actor: <span> Ethan Reed</span></p>
+                        <p>Entity: <span>Config</span></p>
+
+                    </div>
+                    <div class="entity-details">
+                        <p>IP: <span>10.11.3.9</span></p>
+                        <p>ID: <span>CFG-77</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="audit-event-card">
+                <div class="event-details">
+                    <div class="event-description">
+                        <p class="event-title">User created</p>
+                        <p class="event-timestamp">2025-12-18 12:03</p>
+                    </div>
+                    <div class="event-badges">
+                        <button class="severity-badge green-badge">
+                            <p><i class="fa-solid fa-circle"></i>LOW</p>
+                        </button>
+                        <button class="outcome-badge green-badge">
+                            <p><i class="fa-solid fa-circle"></i>SUCCESS</p>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="metadata">
+                    <div class="details">
+                        <p>Actor: <span>Sofia Nguyen</span></p>
+                        <p>Entity: <span>User</span></p>
+
+                    </div>
+                    <div class="entity-details">
+                        <p>IP: <span>10.10.8.41</span></p>
+                        <p>ID:  <span>USR-1108</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="audit-event-card">
+                <div class="event-details">
+                    <div class="event-description">
+                        <p class="event-title">Permission denied while updating watchlist entry</p>
+                        <p class="event-timestamp">2025-12-18 09:54</p>
+                    </div>
+                    <div class="event-badges">
+                        <button class="severity-badge yellow-badge">
+                            <p><i class="fa-solid fa-circle"></i>MED</p>
+                        </button>
+                        <button class="outcome-badge red-badge">
+                            <p><i class="fa-solid fa-circle"></i>FAIL</p>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="metadata">
+                    <div class="details">
+                        <p>Actor: <span>Noah Carter</span></p>
+                        <p>Entity: <span>WatchlistEntry</span></p>
+
+                    </div>
+                    <div class="entity-details">
+                        <p>IP: <span>10.10.2.63</span></p>
+                        <p>ID: <span>WL-8891</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="audit-event-card">
+                <div class="event-details">
+                    <div class="event-description">
+                        <p class="event-title">Session revoked (security policy trigger)</p>
+                        <p class="event-timestamp">2025-12-18 11:54</p>
+                    </div>
+                    <div class="event-badges">
+                        <button class="severity-badge red-badge">
+                            <p><i class="fa-solid fa-circle"></i>HIGH</p>
+                        </button>
+                        <button class="outcome-badge green-badge">
+                            <p><i class="fa-solid fa-circle"></i>SUCCESS</p>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="metadata">
+                    <div class="details">
+                        <p>Actor: <span>Liam Johnson</span></p>
+                        <p>Entity: <span>Session</span></p>
+
+                    </div>
+                    <div class="entity-details">
+                        <p>IP: <span>10.10.9.12</span></p>
+                        <p>ID: <span>SESS-55102</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+</div>
+<script src="https://kit.fontawesome.com/ae0bfda618.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
