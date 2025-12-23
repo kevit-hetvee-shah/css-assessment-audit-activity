@@ -1,11 +1,18 @@
 .main {
-    background-color: rgb(240,248,255);
+    background-color: #F7F8FC;
     box-sizing: border-box
 }
 
 .content {
     margin: 0 20%;
 
+}
+
+.mulish-<uniquifier> {
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
 }
 
 .title {
@@ -64,6 +71,23 @@ header {
     margin-top: 0
 }
 
+@media (min-width: 1024px) {
+    .summary-metrics {
+        grid-template-columns: repeat(4, 25%);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .summary-metrics {
+        grid-template-columns: repeat(2, 50%);
+    }
+}
+
+@media (max-width: 768px) {
+    .summary-metrics {
+        grid-template-columns: 100%;
+    }
+}
 /* Audit event cards styles */
 .audit-cards {
     background: gradient(to bottom, #f0f0f0, #d0d0d0);
@@ -77,6 +101,12 @@ header {
     margin: 20px 5px;
     padding: 5px;
     background-color: white;
+}
+
+.audit-event-card:hover {
+    box-shadow: 10px 10px 10px rgba(128,128,128,0.3);
+    transform: scale(1.02);
+
 }
 
 .event-details {
@@ -107,7 +137,7 @@ header {
 
 .severity-badge, .outcome-badge {
     border-radius: 25px;
-    padding: 0 15px;
+    padding: 0 10px 0 0;
 }
 
 .metadata {
@@ -142,7 +172,7 @@ header {
 .green-badge {
     --green-color: rgb(0, 77, 0);
     border: 1px solid var(--green-color);
-    background-color: rgb(204, 255, 179);
+    background-color: rgb(214, 255, 214);
     color: var(--green-color);
 }
 
@@ -155,5 +185,11 @@ header {
 
 .event-badges p {
     font-weight: bold;
-    font-size: 14px;
+    font-size: 12px;
+}
+
+i {
+    font-size: 10px;
+    text-align: center;
+    padding: 0 5px;
 }
